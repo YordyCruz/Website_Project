@@ -1,0 +1,14 @@
+Welcome to RedStone Landscaping website: http://www.redstonelandscaping.com
+
+The strcuture of the website is as follows:
+    - index.html
+    - style.css
+    - images/
+        - gallery1.jpg
+        - gallery2.jpg
+        - gallery3.jpg
+        - gallery4.jpg
+        - before1.jpg
+        - after1.jpg
+
+    
