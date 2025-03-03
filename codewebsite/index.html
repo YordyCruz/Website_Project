@@ -10,7 +10,12 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;700&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<!-- Link your external script here -->
+<script src="script.js"></script>
 
 <body>
   <!-- Navigation/Head -->
@@ -35,15 +40,51 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Home/Gallery-->
+    <!-- Home/Gallery Section with Slideshow -->
     <section id="home" class="hero-section">
-      <h2>Transform your outdoor space </h2>
-      <p>Professional Landscaping & Maintenance</p>
-      <div class="hero-gallery">
-        <img src="images/gallery1.jpg" alt="Landscape Work 1" />
-        <img src="images/gallery2.jpg" alt="Landscape Work 2" />
-        <img src="images/gallery3.jpg" alt="Landscape Work 3" />
-        <img src="images/gallery4.jpg" alt="Landscape Work 4" />
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="images/gallery1.jpg" alt="Project 1">
+        </div>
+        <div class="slide fade">
+          <img src="images/gallery2.jpg" alt="Project 2">
+        </div>
+        <div class="slide fade">
+          <img src="images/gallery3.jpg" alt="Project 3">
+        </div>
+        <div class="slide fade">
+          <img src="images/gallery4.jpg" alt="Project 4">
+        </div>
+      </div>
+
+      <div class="welcome-message">
+        <h2>Welcome to RedStone Landscape Service</h2>
+        <p>Transforming Southern Nevada's outdoor spaces since 2020</p>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+      <div class="choose-container">
+        <div class="usp-grid">
+          <div class="usp-card">
+            <i class="fas fa-award"></i>
+            <h3>5+ Years Experience</h3>
+            <p>Trust our veteran team with 1000+ completed projects</p>
+          </div>
+
+          <div class="usp-card">
+            <i class="fas fa-seedling"></i>
+            <h3>Premium Materials</h3>
+            <p>Quality plants, durable hardscapes, and commercial-grade equipment</p>
+          </div>
+
+          <div class="usp-card">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Satisfaction Guarantee</h3>
+            <p>We don't stop until you love your new landscape</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -51,6 +92,7 @@
     <!-- Before and After Section -->
     <section class="before-after-section">
       <h2>Before &amp; After</h2>
+      <p class="before-subtitle">See the transformation magic we create for our clients</p>
       <div class="ba-container">
         <div class="image-container">
           <img src="images/after2.jpg" class="ba-image before" alt="Before">
@@ -62,10 +104,39 @@
 
     <!-- Service Section -->
     <section id="services" class="services-section">
-      <h2>Our services</h2>
-      <p>We offer a wide range of landscape designs, maintennance and installation of services.</p>
-      <!-- List of services here-->
-      <!-- TO DO LIST-->
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <!-- Landscape Installation -->
+        <article class="service-card">
+          <h3>Landscape Installation</h3>
+          <ul class="service-details">
+            <li>New plant installations (trees, shrubs, flowers)</li>
+            <li>Decorative rock & boulder placement</li>
+            <li>Mulching & soil preparation</li>
+            <li>New Irrigation</li>
+          </ul>
+        </article>
+
+        <!-- Maintenance Services -->
+        <article class="service-card">
+          <h3>Regular Maintenance</h3>
+          <ul class="service-details">
+            <li>Seasonal yard clean-ups</li>
+            <li>Hedge & shrub trimming</li>
+            <li>Lawn edging & mowing</li>
+            <li>Weed control & fertilization</li>
+          </ul>
+        </article>
+
+        <!-- Hardscaping -->
+        <article class="service-card">
+          <h3>Hardscape Design</h3>
+          <ul class="service-details">
+            <li>Patio & walkway installation</li>
+            <li>Outdoor lighting systems</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <!-- About Section-->
@@ -92,26 +163,7 @@
     <p> &copy; 2025 Redstone Landscape Maintenance. All rights reserved. </p>
   </footer>
 
-  <!-- JAVASCRIPT for Before/After Slider -->
-  <script>
-    const slider = document.getElementById('slider');
-    const afterImage = document.querySelector('.after');
-
-    slider.addEventListener('input', function() {
-        const value = this.value;
-        afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-    });
-</script>
 </body>
-
-
-
-
-
-
-
-
-
 
 
 
