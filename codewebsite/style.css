@@ -22,23 +22,63 @@ header {
 }
 
 .navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
+    gap: 1rem;
 }
 
-.logo h1 {
+
+/* Logo section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Update the logo link styling */
+.logo a {
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: inherit; 
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-img {
+    height: 60px; /* Maintain aspect ratio */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.company-name {
     font-family: 'Abril Fatface', cursive;
-    font-size: 2rem;
-    color: darkred;
+    font-size: 1.8rem;
+    color: #8B0000 !important;
     margin: 0;
+    text-decoration: none !important;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -54,6 +94,7 @@ header {
     color: darkred;
 }
 
+
 .quote-btn {
     background-color: darkred;
     color: #fff;
@@ -66,6 +107,30 @@ header {
 
 .quote-btn:hover {
     background-color: #c80000;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.2rem;
+        white-space: normal;
+    }
+    
+    .nav-right {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* Hero Section */
@@ -414,6 +479,11 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Footer Logo */
+.footer-logo-img {
+    height: 50px;
+    opacity: 0.9;
+}
 footer p {
     margin-bottom: 0.5rem;
 }
